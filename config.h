@@ -29,17 +29,17 @@ static const Rule rules[] = {
 	/* class          instance      title       tags mask     isfloating   monitor */
 	{ "Gimp",         NULL,         NULL,       0,            1,           -1 },
 	{ "etcher",       NULL,         NULL,       0,            1,           -1 },
-	{ "Firefox",      NULL,         NULL,       1 << 8,       0,           -1 },
-	{ "Slack",        NULL,         NULL,       1 << 3,       0,           -1 },
-	{ "Hexchat",      NULL,         NULL,       1 << 4,       0,           -1 },
-	{ "Spotiy",       NULL,         NULL,       1 << 5,       0,           -1 },
-	{ "st-256color",  "mutt",       NULL,       1 << 7,       0,           -1 },
-	{ "st-256color",  "calcurse",   NULL,       1 << 6,       0,           -1 },
-	{ "st-256color",  "ncmpcpp",    NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",      NULL,         NULL,       0,            0,           -1 },
+	{ "Slack",        NULL,         NULL,       0,            0,           -1 },
+	{ "Hexchat",      NULL,         NULL,       0,            0,           -1 },
+	{ "Spotiy",       NULL,         NULL,       0,            0,           -1 },
+	{ "st-256color",  "mutt",       NULL,       0,            0,           -1 },
+	{ "st-256color",  "calcurse",   NULL,       0,            0,           -1 },
+	{ "st-256color",  "ncmpcpp",    NULL,       0,            0,           -1 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
@@ -69,7 +69,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *rangercmd[]  = { "st", "-e", "ranger", NULL };
 static const char *brightnessupcmd[]  = { "/usr/local/bin/brightlight", "-p", "-i", "10", NULL };
 static const char *brightnessdowncmd[]  = { "/usr/local/bin/brightlight", "-p", "-d", "10", NULL };
-static const char *pctlplaycmd[]  = { "playerctl", "play", NULL };
+static const char *pctlplaycmd[]  = { "playerctl", "play-pause", NULL };
 static const char *pctlpausecmd[]  = { "playerctl", "pause", NULL };
 static const char *pctlnextcmd[]  = { "playerctl", "next", NULL };
 static const char *pctlpreviouscmd[]  = { "playerctl", "previous", NULL };
