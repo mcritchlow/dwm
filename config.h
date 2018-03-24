@@ -114,8 +114,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = calcursecmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = gbrowsercmd } },
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          {.v = tbrowsercmd } },
-	{ MODKEY,                       XK_s,      spawn,          {.v = spotifycmd } },
-	{ MODKEY,                       XK_n,      spawn,          {.v = ncmpcppcmd } },
+	{ MODKEY,                       XK_m,      spawn,          {.v = spotifycmd } },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = ncmpcppcmd } },
 	{ MODKEY,                       XK_bracketright,   spawn,  {.v = mpcffcmd } },
 	{ MODKEY|ShiftMask,             XK_bracketright,   spawn,  {.v = mpcfffcmd } },
 	{ MODKEY,                       XK_bracketleft,   spawn,   {.v = mpcrrcmd } },
@@ -146,7 +146,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      spawn,           {.v = mpctogglecmd } },
 	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ControlMask|ShiftMask, XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
@@ -165,8 +165,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          {.v = restartcmd } },
-	{ MODKEY,                       XK_q,      quit,           {0} },
-	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = shutdowncmd } },
+	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ControlMask|ShiftMask, XK_q,      spawn,          {.v = shutdowncmd } },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
 };
 
