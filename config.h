@@ -106,8 +106,8 @@ static const char *lockcmd[] = { "slock", NULL };
 #include <X11/XF86keysym.h> /* makes XF86* keys work */
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = clipcmd } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = dmenucmd } },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = clipcmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_f,      spawn,          {.v = rangercmd } },
 	{ MODKEY,                       XK_c,      spawn,          {.v = hexchatcmd } },
