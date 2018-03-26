@@ -1,0 +1,13 @@
+diff --git a/config.h b/config.h
+index 68fa9f9..af54d2b 100644
+--- a/config.h
++++ b/config.h
+@@ -84,7 +84,7 @@ static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", "ht
+ static const char *mailcmd[]  = { "st", "-n", "mutt", "-e", "bash", "-i", "-c", "~/.config/i3/scripts/mail.sh", NULL };
+ static const char *calcursecmd[]  = { "st", "-n", "calcurse", "-e", "bash", "-i", "-c", "calcurse -D $HOME/.config/calcurse/", NULL };
+ static const char *ncmpcppcmd[]  = { "st", "-n", "ncmpcpp", "-e", "bash", "-i", "-c", "ncmpcpp -s media_library", NULL };
+-static const char *spotifycmd[]  = { "spotify", NULL };
++static const char *spotifycmd[]  = { "spotify", "--force-device-scale-factor=2", NULL };
+ static const char *printcmd[]  = { "scrot", "-q", "100", "-e", "mv $f ~/Pictures/", NULL };
+ static const char *printselcmd[]  = { "scrot", "-s", "-q", "100", "-e", "mv $f ~/Pictures/", NULL };
+ static const char *raisevolumecmd[]  = { "amixer", "-D", "pulse", "sset", "Master", "5%+", "&&", "paplay", "/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga", NULL };
