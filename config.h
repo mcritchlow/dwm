@@ -97,9 +97,7 @@ static const char *mpcrrcmd[]  = { "mpc", "seek", "-10", NULL };
 static const char *mpcrrrcmd[]  = { "mpc", "seek", "-120", NULL };
 static const char *mpcprevcmd[]  = { "mpc", "prev", NULL };
 static const char *mpcnextcmd[]  = { "mpc", "next", NULL };
-static const char *restartcmd[]  = { "systemctl", "reboot", NULL };
-static const char *shutdowncmd[]  = { "systemctl", "poweroff", "-i", NULL };
-static const char *lockcmd[] = { "slock", NULL };
+static const char *dmenu_systemd_cmd[] = { "dmenu_system", NULL };
 
 /* 
  */
@@ -167,10 +165,8 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          {.v = restartcmd } },
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY|ControlMask|ShiftMask, XK_q,      spawn,          {.v = shutdowncmd } },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
+	{ MODKEY,                       XK_x,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_x,      spawn,          {.v = dmenu_systemd_cmd } },
 };
 
 /* button definitions */
