@@ -1,5 +1,5 @@
 diff --git a/config.h b/config.h
-index 68fa9f9..af54d2b 100644
+index e82b39b..09436bb 100644
 --- a/config.h
 +++ b/config.h
 @@ -84,7 +84,7 @@ static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", "ht
@@ -10,4 +10,4 @@ index 68fa9f9..af54d2b 100644
 +static const char *spotifycmd[]  = { "spotify", "--force-device-scale-factor=2", NULL };
  static const char *printcmd[]  = { "scrot", "-q", "100", "-e", "mv $f ~/Pictures/", NULL };
  static const char *printselcmd[]  = { "scrot", "-s", "-q", "100", "-e", "mv $f ~/Pictures/", NULL };
- static const char *raisevolumecmd[]  = { "amixer", "-D", "pulse", "sset", "Master", "5%+", "&&", "paplay", "/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga", NULL };
+ static const char *raisevolumecmd[]  = { "amixer", "-D", "pulse", "sset", "Master", "5%+", NULL };
