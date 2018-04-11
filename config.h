@@ -97,7 +97,7 @@ static const char *mpcrrcmd[]  = { "mpc", "seek", "-10", NULL };
 static const char *mpcrrrcmd[]  = { "mpc", "seek", "-120", NULL };
 static const char *mpcprevcmd[]  = { "mpc", "prev", NULL };
 static const char *mpcnextcmd[]  = { "mpc", "next", NULL };
-static const char *dmenu_systemd_cmd[] = { "dmenu_system", NULL };
+static const char *dmenu_systemd_cmd[] = { "/home/mcritchlow/.bin/dmenu_system", NULL };
 
 /* 
  */
