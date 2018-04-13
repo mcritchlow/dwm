@@ -98,6 +98,7 @@ static const char *mpcrrrcmd[]  = { "mpc", "seek", "-120", NULL };
 static const char *mpcprevcmd[]  = { "mpc", "prev", NULL };
 static const char *mpcnextcmd[]  = { "mpc", "next", NULL };
 static const char *dmenu_systemd_cmd[] = { "/home/mcritchlow/.bin/dmenu_system", NULL };
+static const char *newsboatcmd[]  = { "st", "-e", "bash", "-i", "-c", "newsboat", NULL };
 
 /* 
  */
@@ -117,6 +118,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          {.v = tbrowsercmd } },
 	{ MODKEY,                       XK_m,      spawn,          {.v = spotifycmd } },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = ncmpcppcmd } },
+	{ MODKEY,                       XK_n,      spawn,          {.v = newsboatcmd } },
 	{ MODKEY,                       XK_bracketright,   spawn,  {.v = mpcffcmd } },
 	{ MODKEY|ShiftMask,             XK_bracketright,   spawn,  {.v = mpcfffcmd } },
 	{ MODKEY,                       XK_bracketleft,   spawn,   {.v = mpcrrcmd } },
