@@ -80,8 +80,7 @@ static const char *hexchatcmd[]  = { "hexchat", NULL };
 static const char *slackcmd[]  = { "slack", NULL };
 static const char *gbrowsercmd[]  = { "firefox", NULL };
 static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", "https://duckduckgo.com", NULL };
-/* TODO: move mail.sh out to non-i3 */
-static const char *mailcmd[]  = { "st", "-n", "mutt", "-e", "bash", "-i", "-c", "~/.config/i3/scripts/mail.sh", NULL };
+static const char *mailcmd[]  = { "st", "-n", "mutt", "-e", "bash", "-i", "-c", "tmux-mail", NULL };
 static const char *calcursecmd[]  = { "st", "-n", "calcurse", "-e", "bash", "-i", "-c", "calcurse -D $HOME/.config/calcurse/", NULL };
 static const char *ncmpcppcmd[]  = { "st", "-n", "ncmpcpp", "-e", "bash", "-i", "-c", "ncmpcpp -s media_library", NULL };
 static const char *spotifycmd[]  = { "spotify", NULL };
