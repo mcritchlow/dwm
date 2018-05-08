@@ -1,9 +1,9 @@
 diff --git a/config.h b/config.h
-index e82b39b..09436bb 100644
+index 12dfa42..0163027 100644
 --- a/config.h
 +++ b/config.h
-@@ -84,7 +84,7 @@ static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", "ht
- static const char *mailcmd[]  = { "st", "-n", "mutt", "-e", "bash", "-i", "-c", "~/.config/i3/scripts/mail.sh", NULL };
+@@ -83,7 +83,7 @@ static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", "ht
+ static const char *mailcmd[]  = { "st", "-n", "mutt", "-e", "bash", "-i", "-c", "tmux-mail", NULL };
  static const char *calcursecmd[]  = { "st", "-n", "calcurse", "-e", "bash", "-i", "-c", "calcurse -D $HOME/.config/calcurse/", NULL };
  static const char *ncmpcppcmd[]  = { "st", "-n", "ncmpcpp", "-e", "bash", "-i", "-c", "ncmpcpp -s media_library", NULL };
 -static const char *spotifycmd[]  = { "spotify", NULL };
