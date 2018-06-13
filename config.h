@@ -79,7 +79,7 @@ static const char *pctlpreviouscmd[]  = { "playerctl", "previous", NULL };
 static const char *hexchatcmd[]  = { "hexchat", NULL };
 static const char *slackcmd[]  = { "slack", NULL };
 static const char *gbrowsercmd[]  = { "firefox", NULL };
-static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", "https://duckduckgo.com", NULL };
+static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", NULL };
 static const char *mailcmd[]  = { "st", "-n", "mutt", "-e", "bash", "-i", "-c", "tmux-mail", NULL };
 static const char *calcursecmd[]  = { "st", "-n", "calcurse", "-e", "bash", "-i", "-c", "calcurse -D $HOME/.config/calcurse/", NULL };
 static const char *ncmpcppcmd[]  = { "st", "-n", "ncmpcpp", "-e", "bash", "-i", "-c", "ncmpcpp -s media_library", NULL };
@@ -99,7 +99,7 @@ static const char *mpcnextcmd[]  = { "mpc", "next", NULL };
 static const char *dmenu_systemd_cmd[] = { "/home/mcritchlow/.bin/dmenu_system", NULL };
 static const char *newsboatcmd[]  = { "st", "-e", "bash", "-i", "-c", "newsboat", NULL };
 
-/* 
+/*
  */
 
 #include <X11/XF86keysym.h> /* makes XF86* keys work */
