@@ -79,10 +79,10 @@ static const char *pctlpreviouscmd[]  = { "playerctl", "previous", NULL };
 static const char *hexchatcmd[]  = { "hexchat", NULL };
 static const char *slackcmd[]  = { "slack", NULL };
 static const char *gbrowsercmd[]  = { "firefox", NULL };
-static const char *tbrowsercmd[]  = { "st", "-e", "bash", "-i", "-c", "w3m", NULL };
-static const char *mailcmd[]  = { "st", "-n", "mutt", "-e", "bash", "-i", "-c", "tmux-mail", NULL };
-static const char *calcursecmd[]  = { "st", "-n", "calcurse", "-e", "bash", "-i", "-c", "calcurse -D $HOME/.config/calcurse/", NULL };
-static const char *ncmpcppcmd[]  = { "st", "-n", "ncmpcpp", "-e", "bash", "-i", "-c", "ncmpcpp -s media_library", NULL };
+static const char *tbrowsercmd[]  = { "st", "-t", "w3m", "-e", "bash", "-i", "-c", "w3m", NULL };
+static const char *mailcmd[]  = { "st", "-t", "mutt", "-e", "bash", "-i", "-c", "tmux-mail", NULL };
+static const char *calcursecmd[]  = { "st", "-t", "calcurse", "-e", "bash", "-i", "-c", "calcurse -D $HOME/.config/calcurse/", NULL };
+static const char *ncmpcppcmd[]  = { "st", "-t", "ncmpcpp", "-e", "bash", "-i", "-c", "ncmpcpp -s media_library", NULL };
 static const char *spotifycmd[]  = { "spotify", NULL };
 static const char *printcmd[]  = { "scrot", "-q", "100", "-e", "mv $f ~/Pictures/", NULL };
 static const char *printselcmd[]  = { "scrot", "-s", "-q", "100", "-e", "mv $f ~/Pictures/", NULL };
@@ -97,7 +97,7 @@ static const char *mpcrrrcmd[]  = { "mpc", "seek", "-120", NULL };
 static const char *mpcprevcmd[]  = { "mpc", "prev", NULL };
 static const char *mpcnextcmd[]  = { "mpc", "next", NULL };
 static const char *dmenu_systemd_cmd[] = { "/home/mcritchlow/.bin/dmenu_system", NULL };
-static const char *newsboatcmd[]  = { "st", "-e", "bash", "-i", "-c", "newsboat", NULL };
+static const char *newsboatcmd[]  = { "st", "-t", "newsboat", "-e", "bash", "-i", "-c", "newsboat", NULL };
 
 /*
  */
